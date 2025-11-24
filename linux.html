@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тема: Linux</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+        header {
+            background-color: #2c3e50;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        section {
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #fff;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h2 {
+            color: #2c3e50;
+        }
+        pre {
+            background-color: #eee;
+            padding: 10px;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+        footer {
+            text-align: center;
+            padding: 15px;
+            background-color: #2c3e50;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Веб-сторінка на тему Linux</h1>
+    </header>
+
+    <section>
+        <h2>Коротка інформація про ОС GNU/Linux</h2>
+        <p>GNU/Linux — це відкрита операційна система, що поєднує ядро Linux та утиліти GNU. Використовується для серверів, настільних ПК, вбудованих систем та суперкомп'ютерів.</p>
+    </section>
+
+    <section>
+        <h2>Найпопулярніші дистрибутиви Linux</h2>
+        <ul>
+            <li>Ubuntu</li>
+            <li>Debian</li>
+            <li>Fedora</li>
+            <li>CentOS / Rocky Linux</li>
+            <li>Arch Linux</li>
+            <li>OpenSUSE</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Приклади команд Linux CLI</h2>
+        <pre>
+pwd       # Показати поточний каталог
+ls        # Перелік файлів у каталозі
+cd        # Змінити каталог
+echo      # Вивести текст
+touch     # Створити файл
+mkdir     # Створити каталог
+cp        # Копіювати файл
+mv        # Перемістити або перейменувати
+rm        # Видалити файл або каталог
+history   # Показати історію команд
+        </pre>
+    </section>
+
+    <section>
+        <h2>BASH-скрипт авторизації (імітація)</h2>
+        <pre>
+#!/bin/bash
+echo "Ласкаво просимо до системи!"
+read -p "Введіть ім'я користувача: " user
+read -sp "Введіть пароль: " pass
+echo
+if [[ $user == "admin" && $pass == "1234" ]]; then
+    echo "Авторизація успішна!"
+else
+    echo "Помилка авторизації!"
+fi
+        </pre>
+        <p>Цей скрипт демонструє базову перевірку логіна та пароля в текстовому режимі.</p>
+    </section>
+
+    <section>
+        <h2>Джерела інформації</h2>
+        <ul>
+            <li><a href="https://www.kernel.org/" target="_blank">Офіційний сайт ядра Linux</a></li>
+            <li><a href="https://www.gnu.org/" target="_blank">GNU Project</a></li>
+            <li><a href="https://ubuntu.com/" target="_blank">Ubuntu</a></li>
+            <li><a href="https://www.debian.org/" target="_blank">Debian</a></li>
+        </ul>
+    </section>
+
+    <footer>
+        &copy; 2025 Linux Web Page
+    </footer>
+</body>
+</html>
